@@ -6,4 +6,8 @@ export default defineNuxtConfig({
     "@": "src/",
   },
   modules: ["@nuxtjs/tailwindcss"],
+  ssr: false,
+  app: {
+    baseURL: "/dph-soft-api/",
+  },
 });

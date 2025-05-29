@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "deploy": "nuxt generate && gh-pages -d .output/public"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.8",
@@ -23,6 +24,7 @@
     "@nuxtjs/tailwindcss": "^7.0.0-beta.0",
     "@types/node": "^22.15.21",
     "autoprefixer": "^10.4.21",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.5.4",
     "tailwindcss": "^4.1.8",
     "typescript": "^5.8.3"
